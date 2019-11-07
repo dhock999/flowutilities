@@ -1,0 +1,186 @@
+[
+    {
+        "alertEmail": null,
+        "allowJumping": false,
+        "authorization": {
+            "globalAuthenticationType": "PUBLIC",
+            "groups": null,
+            "locations": null,
+            "serviceElementId": null,
+            "showPagesAsReadOnly": false,
+            "streamBehaviourType": "NONE",
+            "users": null
+        },
+        "comment": null,
+        "dateCreated": "2019-10-08T15:35:55.9223859+00:00",
+        "dateModified": "2019-10-11T14:35:34.6704228+00:00",
+        "developerName": "CRUD Master Detail",
+        "developerSummary": "",
+        "editingToken": null,
+        "id": {
+            "id": "d72aab6f-e7a1-4518-8174-67a04a4b269f",
+            "versionId": "821c15ab-5b0b-49d0-844c-27b2ed180261"
+        },
+        "isActive": false,
+        "isDefault": false,
+        "restrictions": null,
+        "startMapElementId": "3ebc98b1-933f-44c5-a4d1-8b14c699c88f",
+        "stateExpirationLength": 0,
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "alertEmail": null,
+        "allowJumping": false,
+        "authorization": {
+            "globalAuthenticationType": "PUBLIC",
+            "groups": null,
+            "locations": null,
+            "serviceElementId": null,
+            "showPagesAsReadOnly": false,
+            "streamBehaviourType": "NONE",
+            "users": null
+        },
+        "comment": null,
+        "dateCreated": "2019-10-11T14:06:37.3744747+00:00",
+        "dateModified": "2019-10-13T02:01:03.6859362+00:00",
+        "developerName": "Flow Utilities",
+        "developerSummary": "",
+        "editingToken": null,
+        "id": {
+            "id": "75b205f3-da27-4515-8a60-77da5dd96af9",
+            "versionId": "cac6721b-1f0f-4a2e-9b94-ff00c44e34db"
+        },
+        "isActive": false,
+        "isDefault": false,
+        "restrictions": null,
+        "startMapElementId": "a14dab65-eff5-43e2-bfef-77fe08917492",
+        "stateExpirationLength": 0,
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "alertEmail": null,
+        "allowJumping": false,
+        "authorization": {
+            "globalAuthenticationType": "PUBLIC",
+            "groups": null,
+            "locations": null,
+            "serviceElementId": null,
+            "showPagesAsReadOnly": false,
+            "streamBehaviourType": "NONE",
+            "users": null
+        },
+        "comment": null,
+        "dateCreated": "2019-10-08T15:35:49.4250218+00:00",
+        "dateModified": "2019-10-08T15:42:12.5059453+00:00",
+        "developerName": "Service Singleton Input",
+        "developerSummary": "",
+        "editingToken": null,
+        "id": {
+            "id": "2847ba44-1b62-4ae2-98ff-de2fe28de0bd",
+            "versionId": "1ca4f5b9-5092-42e5-a961-a1a0963a2173"
+        },
+        "isActive": false,
+        "isDefault": false,
+        "restrictions": null,
+        "startMapElementId": "2a8aa2b7-25fd-4f9d-b489-aff56439159c",
+        "stateExpirationLength": 0,
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "alertEmail": null,
+        "allowJumping": false,
+        "authorization": {
+            "globalAuthenticationType": "PUBLIC",
+            "groups": null,
+            "locations": null,
+            "serviceElementId": null,
+            "showPagesAsReadOnly": false,
+            "streamBehaviourType": "NONE",
+            "users": null
+        },
+        "comment": null,
+        "dateCreated": "2019-10-08T15:35:42.3816061+00:00",
+        "dateModified": "2019-10-09T21:26:21.220382+00:00",
+        "developerName": "Service Singleton Input/Output",
+        "developerSummary": "",
+        "editingToken": null,
+        "id": {
+            "id": "8d0258cf-8e2b-4ca3-ad2f-4038311b30bc",
+            "versionId": "34eee295-db36-4635-9c2e-adab578986a9"
+        },
+        "isActive": false,
+        "isDefault": false,
+        "restrictions": null,
+        "startMapElementId": "0bf67f1e-db8d-4f17-88ef-ed2e52bf1683",
+        "stateExpirationLength": 0,
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    }
+]

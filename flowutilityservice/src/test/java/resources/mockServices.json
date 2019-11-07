@@ -1,0 +1,1208 @@
+[
+    {
+        "actions": [
+            {
+                "developerName": "Login",
+                "developerSummary": "Login and return token",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentPassword",
+                        "developerName": "Password",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Username",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/token"
+            },
+            {
+                "developerName": "Create Flow",
+                "developerSummary": "Create a Flow for the specified service/action",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Action Name",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Service ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Tenant ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "New Flow Name",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/createflow"
+            },
+            {
+                "developerName": "Get Services and Actions",
+                "developerSummary": "Return database and message services/actions  for tenant",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Tenant ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "Services",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/services"
+            },
+            {
+                "developerName": "Get Pages",
+                "developerSummary": "Return pages for tenant",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Tenant ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "Pages",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/pages"
+            },
+            {
+                "developerName": "Copy Page",
+                "developerSummary": "Copy the specified page",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Page ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Tenant ID",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "New Page Name",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/copypage"
+            },
+            {
+                "developerName": "Get Tenants",
+                "developerSummary": "Return tenants for user",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Token",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "Tenants",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions//flowutilities/tenants"
+            }
+        ],
+        "configurationValues": null,
+        "dateCreated": "2019-10-12T18:48:37.6904895+00:00",
+        "dateModified": "2019-10-12T18:48:37.690493+00:00",
+        "developerName": "Flow Utilities 3",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "",
+        "id": "9b687df2-cecf-4882-bf30-70d1f873eb94",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": true,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://ca147a2d.ngrok.io",
+        "version": "1",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": [
+            {
+                "developerName": "Daily",
+                "developerSummary": "",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": null,
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Days Into Billing Cycle",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Projected Total (kWH)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Projected Peak (kWH)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Projected Off Peak (kWH)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Projected Super Off Peak (kWH)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Projected Bill",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentDateTime",
+                        "developerName": "Timestamp",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Today Total (Watt Hours)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Today Peak (Watt Hours)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Today Off Peak (Watt Hours)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Today Super Off Peak (Watt Hours)",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Current Consumption",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Current Production",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions/Daily"
+            },
+            {
+                "developerName": "RealTime",
+                "developerSummary": "",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": null,
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "getRealTimeSolarData",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions/RealTime"
+            }
+        ],
+        "configurationValues": null,
+        "dateCreated": "2019-09-08T17:25:58.952596+00:00",
+        "dateModified": "2019-10-08T15:42:44.8146279+00:00",
+        "developerName": "Going Solar",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "boomi_davehock-T9DOG4.MG0YJ2",
+        "id": "788decf1-1a3a-40ef-935a-f31853a2107c",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": true,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://connect.boomi.com/fs/Going+Solar",
+        "version": "2",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": null,
+        "configurationValues": [
+            {
+                "contentType": "ContentBoolean",
+                "developerName": "No SSL",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "be1bc78e-fd57-40ec-9a86-a815de2a9e28",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentPassword",
+                "developerName": "Password",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "41605375-53aa-4e39-bffc-4585d476bf9b",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Type",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "148d6312-61da-4cb5-bc40-a2871533fa18",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Schema",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "671afad2-dedb-401b-88ad-61245e4389d5",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Name",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "780d7d20-a2b6-4e20-9345-fabedf1405b3",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentNumber",
+                "developerName": "Port",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "ed0ba165-9f72-4707-b1e8-38df25429d30",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Host",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "c1198ba5-d15c-4847-a064-15f62f73816e",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Username",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "ca84cff5-4b4e-4f94-abd6-a37b823ddffe",
+                    "typeElementPropertyId": null
+                }
+            }
+        ],
+        "dateCreated": "2019-10-08T15:35:55.8808759+00:00",
+        "dateModified": "2019-10-08T15:35:55.8808759+00:00",
+        "developerName": "My SQL",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "",
+        "id": "35e1c521-897d-4f6b-864b-90bd01f1813e",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": true,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": false,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://services-staging.manywho.com/api/sql/2",
+        "version": "1",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": null,
+        "configurationValues": [
+            {
+                "contentType": "ContentBoolean",
+                "developerName": "No SSL",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "be1bc78e-fd57-40ec-9a86-a815de2a9e28",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentPassword",
+                "developerName": "Password",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "41605375-53aa-4e39-bffc-4585d476bf9b",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Type",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "148d6312-61da-4cb5-bc40-a2871533fa18",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Schema",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "780d7d20-a2b6-4e20-9345-fabedf1405b3",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Database Name",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "780d7d20-a2b6-4e20-9345-fabedf1405b3",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentNumber",
+                "developerName": "Port",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "ed0ba165-9f72-4707-b1e8-38df25429d30",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Host",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "c1198ba5-d15c-4847-a064-15f62f73816e",
+                    "typeElementPropertyId": null
+                }
+            },
+            {
+                "contentType": "ContentString",
+                "developerName": "Username",
+                "order": 0,
+                "typeElementDeveloperName": null,
+                "typeElementId": null,
+                "valueElementToReferenceDeveloperName": null,
+                "valueElementToReferenceId": {
+                    "command": "",
+                    "id": "ca84cff5-4b4e-4f94-abd6-a37b823ddffe",
+                    "typeElementPropertyId": null
+                }
+            }
+        ],
+        "dateCreated": "2019-10-13T22:37:24.5983525+00:00",
+        "dateModified": "2019-10-13T22:37:24.5983562+00:00",
+        "developerName": "Mysql 2",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "",
+        "id": "8dc0df53-d2e5-4675-a652-0a9094b4d9a3",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": true,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": false,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://services.manywho.com/api/sql/2",
+        "version": "1",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": [
+            {
+                "developerName": "RealTimeONPREM",
+                "developerSummary": "",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": null,
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "getRealTimeSolarData",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions/RealTimeONPREM"
+            }
+        ],
+        "configurationValues": null,
+        "dateCreated": "2019-07-30T17:37:36.5456161+00:00",
+        "dateModified": "2019-10-08T15:42:44.8146279+00:00",
+        "developerName": "ONPREM Solar Service",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "boomi_davehock-T9DOG4.MG0YJ2",
+        "id": "92533c37-4664-4afb-8d36-36884b3aa0be",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": true,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://connect.boomi.com/fs/Going+Solar+ONPREM",
+        "version": "2",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": [
+            {
+                "developerName": "Recognize Plate from Camera",
+                "developerSummary": "",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "imgData",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "Acquisition Mode",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "Camera Number",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentBoolean",
+                        "developerName": "returnImage",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": [
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "plateText",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "plateState",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "overallConfidence",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "totalProcessingTimeMs",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "imgWidth",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "imgHeight",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "plateHorizontalLocation",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentNumber",
+                        "developerName": "plateVerticalLocation",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "make",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "model",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "year",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "body_class",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "vehicle_type",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "manufacturer",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "plant_country",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "plant_city",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "status",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    },
+                    {
+                        "contentType": "ContentString",
+                        "developerName": "imgData",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "uriPart": "actions/Recognize+Plate+from+Camera"
+            }
+        ],
+        "configurationValues": null,
+        "dateCreated": "2019-10-08T15:35:42.3130955+00:00",
+        "dateModified": "2019-10-08T15:35:42.3130955+00:00",
+        "developerName": "Recognize Plate from Camera",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "boomi_davehock-T9DOG4.MG0YJ2",
+        "id": "d5f7cd6f-1773-4c4e-88b3-9cd11c5953ac",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": true,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://connect.boomi.com/fs/Recognize+License+Plate",
+        "version": "2",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": null,
+        "configurationValues": null,
+        "dateCreated": "2019-10-08T15:35:42.3130955+00:00",
+        "dateModified": "2019-10-08T15:35:42.3130955+00:00",
+        "developerName": "Recognize Plate From Upload",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "boomi_davehock-T9DOG4.MG0YJ2",
+        "id": "5cc320c3-6016-4d83-8554-5a2734f35492",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": true,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": false,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://connect.boomi.com/fs/Recognize+License+Plate+Upload",
+        "version": "2",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    },
+    {
+        "actions": [
+            {
+                "developerName": "Set Arm Position",
+                "developerSummary": "",
+                "isViewMessageAction": false,
+                "serviceActionOutcomes": null,
+                "serviceInputs": [
+                    {
+                        "contentType": "ContentList",
+                        "developerName": "Arm Position Requests",
+                        "order": 0,
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null,
+                        "valueElementToReferenceDeveloperName": null,
+                        "valueElementToReferenceId": null
+                    }
+                ],
+                "serviceOutputs": null,
+                "uriPart": "actions/Set+Arm+Position"
+            }
+        ],
+        "configurationValues": null,
+        "dateCreated": "2019-10-08T15:35:49.3421931+00:00",
+        "dateModified": "2019-10-08T15:35:49.3421931+00:00",
+        "developerName": "Robot Arm Controler",
+        "developerSummary": "",
+        "elementType": "SERVICE",
+        "format": "json",
+        "httpAuthenticationPassword": null,
+        "httpAuthenticationUsername": "boomi_davehock-T9DOG4.MG0YJ2",
+        "id": "59273af9-5fc9-4334-8640-d67b9c81e5f1",
+        "install": null,
+        "providesAutoBinding": false,
+        "providesDatabase": false,
+        "providesFiles": false,
+        "providesIdentity": false,
+        "providesLocation": false,
+        "providesLogic": true,
+        "providesSocial": false,
+        "providesViews": false,
+        "sendDecryptedValues": false,
+        "updateByName": false,
+        "uri": "https://connect.boomi.com/fs/Robotic+Arm",
+        "version": "2",
+        "whoCreated": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoModified": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        },
+        "whoOwner": {
+            "email": "dave.hock@dell.com",
+            "firstName": "David",
+            "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+            "lastName": "Hock"
+        }
+    }
+]

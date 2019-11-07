@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><Component xmlns:ns2="http://www.boomi.com/connector/annotation" xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI" xmlns:ns4="urn:fault.partner.exacttarget.com" xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40" xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Id>e9fc44fa-7886-4115-b553-ef50873abfc2</Id>
+  <Type>profile.json</Type>
+  <Name>FileUploadResponse</Name>
+  <Version>6</Version>
+  <FolderId name="Boomi_DaveHock/#License Plate Recognition">2747070</FolderId>
+  <AccountId>boomi_davehock-T9DOG4</AccountId>
+  <Properties/>
+  <References/>
+  <Description/>
+  <Object>
+    <JSONProfile strict="false">
+      <DataElements>
+        <JSONRootValue dataType="character" isMappable="false" isNode="true" key="25" name="File">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <JSONObject isMappable="false" isNode="true" key="26" name="FileUploadResponse">
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="4" name="externalId">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="datetime" isMappable="true" isNode="true" key="12" name="Date Created" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="datetime" isMappable="true" isNode="true" key="13" name="Date Modified" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="14" name="Description">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="15" name="Download Uri">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="16" name="Embed Uri">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="20" name="Icon Uri">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="21" name="Id">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="22" name="Kind">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="23" name="Mime Type">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="24" name="Name">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="29" name="plateText" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="30" name="plateState" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="31" name="overallConfidence" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="32" name="totalProcessingTimeMs" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="33" name="imgData" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="34" name="imgWidth" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="35" name="imgHeight" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="36" name="plateHorizontalLocation" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="37" name="plateVerticalLocation" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="38" name="make" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="39" name="model" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="40" name="year" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="41" name="body_class" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="42" name="vehicle_type" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="43" name="manufacturer" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="44" name="plant_country" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="45" name="plant_city" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="46" name="status" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+          </JSONObject>
+          <Qualifiers>
+            <QualifierList/>
+          </Qualifiers>
+        </JSONRootValue>
+      </DataElements>
+      <tagLists/>
+    </JSONProfile>
+  </Object>
+</Component>

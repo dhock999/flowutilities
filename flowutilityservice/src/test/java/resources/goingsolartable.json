@@ -1,0 +1,127 @@
+{
+    "attributes": null,
+    "dateCreated": "2019-07-11T15:57:54.7257339+00:00",
+    "dateModified": "2019-07-30T18:15:50.8804125+00:00",
+    "developerName": "Data Table Page Layout",
+    "developerSummary": "",
+    "elementType": "PAGE_LAYOUT",
+    "id": "e2dfbf53-e90a-4629-aff8-4bf41724e65f",
+    "label": "",
+    "pageComponents": [
+        {
+            "attributes": null,
+            "columns": [
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "",
+                    "order": 0,
+                    "typeElementPropertyDeveloperName": "Timestamp",
+                    "typeElementPropertyId": "8958157c-9ff3-472d-bda7-35648ec4fecb",
+                    "typeElementPropertyToDisplayId": null
+                },
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "Solar Production (Watts)",
+                    "order": 1,
+                    "typeElementPropertyDeveloperName": "Current Solar Production (Watts)",
+                    "typeElementPropertyId": "589c2d44-ba66-4519-964e-b506e5bbf20b",
+                    "typeElementPropertyToDisplayId": null
+                },
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "Consumption (Watts)",
+                    "order": 2,
+                    "typeElementPropertyDeveloperName": "Current Consumption (Watts)",
+                    "typeElementPropertyId": "bc2f96df-3f20-4b50-80ec-bc1bdd1b9eee",
+                    "typeElementPropertyToDisplayId": null
+                },
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "Billing Tier",
+                    "order": 3,
+                    "typeElementPropertyDeveloperName": "Time Of Use Tier",
+                    "typeElementPropertyId": "f3798080-2a80-4f60-8912-b6b47d706e0b",
+                    "typeElementPropertyToDisplayId": null
+                }
+            ],
+            "componentType": "table",
+            "content": "",
+            "developerName": "Consumption Data",
+            "fileDataRequest": null,
+            "height": 0,
+            "helpInfo": "",
+            "hintValue": "",
+            "id": "873dfaef-88bb-437b-87e2-2d29dc333d30",
+            "imageUri": "",
+            "isEditable": true,
+            "isMultiSelect": false,
+            "isRequired": false,
+            "isSearchable": false,
+            "label": "",
+            "maxSize": 0,
+            "objectDataRequest": null,
+            "order": 0,
+            "pageContainerDeveloperName": "Main container",
+            "pageContainerId": "43d69d19-2467-42ed-8e36-e116bb54f5d1",
+            "size": 0,
+            "tags": null,
+            "valueElementDataBindingReferenceId": {
+                "command": "",
+                "id": "19730711-0ecd-4111-85ed-15458b0270cf",
+                "typeElementPropertyId": null
+            },
+            "valueElementValueBindingReferenceId": null,
+            "width": 0
+        }
+    ],
+    "pageConditions": null,
+    "pageContainers": [
+        {
+            "attributes": null,
+            "containerType": "VERTICAL_FLOW",
+            "developerName": "Main container",
+            "id": "43d69d19-2467-42ed-8e36-e116bb54f5d1",
+            "label": "",
+            "order": 0,
+            "pageContainers": null,
+            "tags": null
+        }
+    ],
+    "stopConditionsOnFirstTrue": false,
+    "tags": null,
+    "updateByName": false,
+    "whoCreated": {
+        "email": "dave.hock@dell.com",
+        "firstName": "David",
+        "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+        "lastName": "Hock"
+    },
+    "whoModified": {
+        "email": "dave.hock@dell.com",
+        "firstName": "David",
+        "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+        "lastName": "Hock"
+    },
+    "whoOwner": {
+        "email": "dave.hock@dell.com",
+        "firstName": "David",
+        "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+        "lastName": "Hock"
+    }
+}

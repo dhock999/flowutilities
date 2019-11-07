@@ -1,0 +1,87 @@
+{
+    "attributes": null,
+    "developerName": "Chart Page Layout",
+    "developerSummary": "",
+    "elementType": "PAGE_LAYOUT",
+    "id": "96929a58-179c-446f-950f-5e54b3e6569e",
+    "label": "Production vs. Consumption",
+    "pageComponents": [
+    {
+            "attributes": null,
+            "columns": [
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "Time",
+                    "order": 0,
+                    "typeElementPropertyDeveloperName": "Label",
+                    "typeElementPropertyId": "7bff0b1a-4bbc-4a14-8c8a-9baba132fd00",
+                    "typeElementPropertyToDisplayId": null
+                },
+                {
+                    "boundTypeElementPropertyId": null,
+                    "componentType": "",
+                    "isBound": false,
+                    "isDisplayValue": true,
+                    "isEditable": false,
+                    "label": "Time of Use Price ($0.0001)",
+                    "order": 1,
+                    "typeElementPropertyDeveloperName": "Value",
+                    "typeElementPropertyId": "841f2f8a-536f-4669-9f43-a39cf858b167",
+                    "typeElementPropertyToDisplayId": null
+                }
+            ],
+            "componentType": "chart-line",
+            "developerName": "TOU Chart",
+            "id": "ade07249-e2fe-2e14-711c-e6059e9b2e56",
+            "label": "Time of Use Price ($0.0001)",
+            "order": 2,
+            "pageContainerDeveloperName": "Graph",
+            "pageContainerId": "f4b4b829-a5e2-048c-3d4f-471b193606bd",
+            "valueElementDataBindingReferenceId": {
+                "command": "",
+                "id": "60f678ef-faea-407c-9ff8-1e2e1f1713dc",
+                "typeElementPropertyId": null
+            },
+            "valueElementValueBindingReferenceId": null,
+            "width": 0
+        }
+    ],
+    "pageConditions": null,
+    "pageContainers": [
+        {
+            "attributes": null,
+            "containerType": "VERTICAL_FLOW",
+            "developerName": "Main container",
+            "id": "c60df2a9-bf97-4d7d-b945-54fb1f6c673c",
+            "label": "",
+            "order": 0,
+            "pageContainers": [
+                {
+                    "attributes": null,
+                    "containerType": "CHARTS",
+                    "developerName": "Graph",
+                    "id": "f4b4b829-a5e2-048c-3d4f-471b193606bd",
+                    "label": "Production vs. Consumption",
+                    "order": 1,
+                    "pageContainers": null,
+                    "tags": null
+                },
+                {
+                    "attributes": null,
+                    "containerType": "VERTICAL_FLOW",
+                    "developerName": "Header",
+                    "id": "4efc4954-bc2b-08af-1dbe-27d1e99f4732",
+                    "label": "",
+                    "order": 0,
+                    "pageContainers": null,
+                    "tags": null
+                }
+            ],
+            "tags": null
+        }
+    ]
+}

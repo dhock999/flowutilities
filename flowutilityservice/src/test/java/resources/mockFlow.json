@@ -1,0 +1,382 @@
+{
+    "allowJumping": false,
+    "authorization": null,
+    "dateModified": "2019-10-11T14:35:34.6704228+00:00",
+    "developerName": "CRUD Master Detail",
+    "developerSummary": "",
+    "editingToken": "41ecd6b6-ad35-470a-83b6-9f7154ba3e81",
+    "groupElements": [],
+    "id": {
+        "id": "d72aab6f-e7a1-4518-8174-67a04a4b269f",
+        "versionId": "821c15ab-5b0b-49d0-844c-27b2ed180261"
+    },
+    "mapElements": [
+        {
+            "developerName": "About",
+            "developerSummary": "",
+            "elementType": "step",
+            "groupElementId": null,
+            "id": "22876534-e8b3-4146-9621-18f2562ea954",
+            "outcomes": null,
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 190,
+            "y": 70
+        },
+        {
+            "developerName": "Start",
+            "developerSummary": "",
+            "elementType": "START",
+            "groupElementId": null,
+            "id": "3ebc98b1-933f-44c5-a4d1-8b14c699c88f",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": null,
+                    "developerName": "Start",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "619d3499-ddf9-44b7-80be-72745ac46a20",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "986e0200-3e8f-4a66-a731-22c352fad332",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 50,
+            "y": 300
+        },
+        {
+            "developerName": "Delete Row",
+            "developerSummary": "",
+            "elementType": "database_delete",
+            "groupElementId": null,
+            "id": "59d9524a-77c6-4c4e-ab8c-5a774029492b",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 240,
+                            "y": 750
+                        }
+                    ],
+                    "developerName": "Continue",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "801b09f1-ba4c-4c9e-8e02-25d6bf4f8b3d",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "fdc3786e-8ebb-461a-ab39-4526b39dfdf2",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 340,
+            "y": 700
+        },
+        {
+            "developerName": "&rowID= passed in URL?",
+            "developerSummary": "",
+            "elementType": "decision",
+            "groupElementId": null,
+            "id": "986e0200-3e8f-4a66-a731-22c352fad332",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": {
+                        "comparisons": null,
+                        "comparisonType": "AND",
+                        "order": 0,
+                        "rules": [
+                            {
+                                "criteriaType": "IS_EMPTY",
+                                "criteriaTypeFriendly": null,
+                                "leftValueElementToReferenceDeveloperName": null,
+                                "leftValueElementToReferenceId": {
+                                    "command": "",
+                                    "id": "ea264eb1-97dc-4497-9fef-5232fcf37678",
+                                    "typeElementPropertyId": null
+                                },
+                                "rightValueElementToReferenceDeveloperName": null,
+                                "rightValueElementToReferenceId": {
+                                    "command": "",
+                                    "id": "be1bc78e-fd57-40ec-9a86-a815de2a9e28",
+                                    "typeElementPropertyId": null
+                                }
+                            }
+                        ]
+                    },
+                    "controlPoints": null,
+                    "developerName": "rowID empty",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "65a62fe0-4d08-4a18-94b3-b4c31539dd6e",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "fdc3786e-8ebb-461a-ab39-4526b39dfdf2",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                },
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 270,
+                            "y": 210
+                        }
+                    ],
+                    "developerName": "otherwise",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "ba82e35f-d47f-4348-851f-1d81ee4276eb",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "ccd53e07-6c8f-4981-baf5-8c1f7f311b44",
+                    "order": 1,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 180,
+            "y": 300
+        },
+        {
+            "developerName": "Save Row",
+            "developerSummary": "",
+            "elementType": "database_save",
+            "groupElementId": null,
+            "id": "a50f73b5-8e4c-4e2a-a4ad-49726ba905a2",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 620,
+                            "y": 640
+                        }
+                    ],
+                    "developerName": "Continue",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "d21afe04-7004-4544-ad15-b059e38bb05b",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "fdc3786e-8ebb-461a-ab39-4526b39dfdf2",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 750,
+            "y": 580
+        },
+        {
+            "developerName": "Load Row for rowID",
+            "developerSummary": "",
+            "elementType": "database_load",
+            "groupElementId": null,
+            "id": "ccd53e07-6c8f-4981-baf5-8c1f7f311b44",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": null,
+                    "developerName": "Open Form",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "ecc307f7-d564-462a-bf75-db2de296d211",
+                    "isBulkAction": false,
+                    "label": "",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "e8b00ae7-ad60-4304-bcc8-b46f5135f3b0",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": null,
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 530,
+            "y": 120
+        },
+        {
+            "developerName": "Edit Row",
+            "developerSummary": "",
+            "elementType": "input",
+            "groupElementId": null,
+            "id": "e8b00ae7-ad60-4304-bcc8-b46f5135f3b0",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 400,
+                            "y": 440
+                        }
+                    ],
+                    "developerName": "Cancel",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "9d1e3764-4473-4a48-9162-b34483baef0a",
+                    "isBulkAction": false,
+                    "label": "Cancel",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "fdc3786e-8ebb-461a-ab39-4526b39dfdf2",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                },
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": null,
+                    "developerName": "Save",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "1eec56f7-3983-4be1-a8fe-5d1dec2ab782",
+                    "isBulkAction": false,
+                    "label": "Save",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "a50f73b5-8e4c-4e2a-a4ad-49726ba905a2",
+                    "order": 1,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "",
+                    "pageObjectBindingId": null
+                }
+            ],
+            "pageElementId": "b59be5d7-b46b-440a-9852-dca909eeec69",
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 750,
+            "y": 340
+        },
+        {
+            "developerName": "Row List",
+            "developerSummary": "",
+            "elementType": "input",
+            "groupElementId": null,
+            "id": "fdc3786e-8ebb-461a-ab39-4526b39dfdf2",
+            "outcomes": [
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 520,
+                            "y": 340
+                        }
+                    ],
+                    "developerName": "Edit",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "c377e707-c6e2-4e46-b21a-db405dd29b8d",
+                    "isBulkAction": false,
+                    "label": "Edit",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "e8b00ae7-ad60-4304-bcc8-b46f5135f3b0",
+                    "order": 0,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "Edit",
+                    "pageObjectBindingId": "c34148b5-3b9c-4115-9b01-fb6d406b5536"
+                },
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 410,
+                            "y": 680
+                        }
+                    ],
+                    "developerName": "Delete",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "c0f21655-e7a2-43ed-9428-8e6854511987",
+                    "isBulkAction": false,
+                    "label": "Delete",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "59d9524a-77c6-4c4e-ab8c-5a774029492b",
+                    "order": 1,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "Delete",
+                    "pageObjectBindingId": "c34148b5-3b9c-4115-9b01-fb6d406b5536"
+                },
+                {
+                    "attributes": null,
+                    "comparison": null,
+                    "controlPoints": [
+                        {
+                            "x": 740,
+                            "y": 390
+                        }
+                    ],
+                    "developerName": "Add",
+                    "developerSummary": null,
+                    "flowOut": null,
+                    "id": "775ac51b-1bab-4bf5-b922-b0ec5cebe58d",
+                    "isBulkAction": true,
+                    "label": "Add",
+                    "nextMapElementDeveloperName": null,
+                    "nextMapElementId": "e8b00ae7-ad60-4304-bcc8-b46f5135f3b0",
+                    "order": 2,
+                    "pageActionBindingType": "SAVE",
+                    "pageActionType": "Add",
+                    "pageObjectBindingId": "c34148b5-3b9c-4115-9b01-fb6d406b5536"
+                }
+            ],
+            "pageElementId": "8cbf4a4a-92b0-4946-9e43-d89e2085a641",
+            "whoCreated": null,
+            "whoModified": null,
+            "whoOwner": null,
+            "x": 180,
+            "y": 520
+        }
+    ],
+    "restrictions": null,
+    "startMapElementId": "3ebc98b1-933f-44c5-a4d1-8b14c699c88f",
+    "stateExpirationLength": 0,
+    "tenantId": null
+}

@@ -1,0 +1,588 @@
+{
+    "actions": [
+        {
+            "developerName": "Get Services and Actions",
+            "developerSummary": "Return database and message services/actions  for tenant",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Tenant ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentList",
+                    "developerName": "Services",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/services"
+        },
+        {
+            "developerName": "Create Flow",
+            "developerSummary": "Create a Flow for the specified service/action",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Action Name",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Option",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Service ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Tenant ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Type ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Information",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/createflow"
+        },
+        {
+            "developerName": "Copy Page",
+            "developerSummary": "Copy the specified page",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Page ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Tenant ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "New Page Name",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/copypage"
+        },
+        {
+            "developerName": "Login",
+            "developerSummary": "Login and return token",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentPassword",
+                    "developerName": "Password",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Username",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/token"
+        },
+        {
+            "developerName": "Get Tenants",
+            "developerSummary": "Return tenants for user",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentList",
+                    "developerName": "Tenants",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/tenants"
+        },
+        {
+            "developerName": "Get Pages",
+            "developerSummary": "Return pages for tenant",
+            "isViewMessageAction": false,
+            "serviceActionOutcomes": null,
+            "serviceInputs": [
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Tenant ID",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                },
+                {
+                    "contentType": "ContentString",
+                    "developerName": "Token",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "serviceOutputs": [
+                {
+                    "contentType": "ContentList",
+                    "developerName": "Pages",
+                    "order": 0,
+                    "typeElementDeveloperName": null,
+                    "typeElementId": null,
+                    "valueElementToReferenceDeveloperName": null,
+                    "valueElementToReferenceId": null
+                }
+            ],
+            "uriPart": "actions//flowutilities/pages"
+        }
+    ],
+    "configurationValues": null,
+    "developerName": "Flow Utilities",
+    "developerSummary": "",
+    "elementType": "SERVICE",
+    "format": "json",
+    "httpAuthenticationPassword": null,
+    "httpAuthenticationUsername": "",
+    "id": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+    "install": {
+        "typeElements": [
+            {
+                "bindings": [
+                    {
+                        "databaseTableName": "Page",
+                        "developerName": "Page",
+                        "developerSummary": "The Page object structure",
+                        "id": "f51427da-a1c6-47f6-a242-349f7093017b",
+                        "propertyBindings": [
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Id",
+                                "typeElementPropertyDeveloperName": "Id",
+                                "typeElementPropertyId": "bb10e747-0525-4652-a738-a68b2df4b35a"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Name",
+                                "typeElementPropertyDeveloperName": "Name",
+                                "typeElementPropertyId": "ce2130d8-4f22-4996-92d9-e5e5efd7c8bc"
+                            }
+                        ],
+                        "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                        "typeElementId": "b031a875-5f27-4200-84fb-10b869719bfa"
+                    }
+                ],
+                "dateCreated": "2019-10-14T22:56:59.4321144+00:00",
+                "dateModified": "2019-10-14T22:56:59.4424681+00:00",
+                "developerName": "Page",
+                "developerSummary": "The Page object structure",
+                "elementType": "TYPE",
+                "id": "b031a875-5f27-4200-84fb-10b869719bfa",
+                "properties": [
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Id",
+                        "id": "bb10e747-0525-4652-a738-a68b2df4b35a",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Name",
+                        "id": "ce2130d8-4f22-4996-92d9-e5e5efd7c8bc",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    }
+                ],
+                "serviceElementDeveloperName": null,
+                "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                "updateByName": false,
+                "whoCreated": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoModified": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoOwner": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                }
+            },
+            {
+                "bindings": [
+                    {
+                        "databaseTableName": "Service",
+                        "developerName": "Service",
+                        "developerSummary": "The Service object structure",
+                        "id": "ba23aea9-618f-41e8-affb-c434809f8bfc",
+                        "propertyBindings": [
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Action Name",
+                                "typeElementPropertyDeveloperName": "Action Name",
+                                "typeElementPropertyId": "ae333735-a579-410d-83c5-a4e50f9069b0"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Description",
+                                "typeElementPropertyDeveloperName": "Description",
+                                "typeElementPropertyId": "d4b3a998-f519-465d-8ab5-0f4a70dada5f"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Design Pattern",
+                                "typeElementPropertyDeveloperName": "Design Pattern",
+                                "typeElementPropertyId": "407f348e-6881-4934-94ba-5327eca134f5"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Id",
+                                "typeElementPropertyDeveloperName": "Id",
+                                "typeElementPropertyId": "a6c4dbee-abb2-44d0-9484-8d015628f4c9"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Service - Action Name",
+                                "typeElementPropertyDeveloperName": "Service - Action Name",
+                                "typeElementPropertyId": "bcd159ef-e7ab-46b5-a023-3d590d2e0369"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Service Name",
+                                "typeElementPropertyDeveloperName": "Service Name",
+                                "typeElementPropertyId": "d0d05ddf-e9f4-4f5d-a5b9-60b2a757a83c"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Type ID",
+                                "typeElementPropertyDeveloperName": "Type ID",
+                                "typeElementPropertyId": "8f2e17ee-5d57-42ab-a51b-87fe853147a9"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Type Name",
+                                "typeElementPropertyDeveloperName": "Type Name",
+                                "typeElementPropertyId": "2358ef32-9a38-4ae6-908c-5069bb10b883"
+                            }
+                        ],
+                        "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                        "typeElementId": "ab7d82a0-bbd2-42bb-b802-de5d6fda076d"
+                    }
+                ],
+                "dateCreated": "2019-10-14T22:56:59.477319+00:00",
+                "dateModified": "2019-10-14T22:56:59.514055+00:00",
+                "developerName": "Service",
+                "developerSummary": "The Service object structure",
+                "elementType": "TYPE",
+                "id": "ab7d82a0-bbd2-42bb-b802-de5d6fda076d",
+                "properties": [
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Action Name",
+                        "id": "ae333735-a579-410d-83c5-a4e50f9069b0",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Description",
+                        "id": "d4b3a998-f519-465d-8ab5-0f4a70dada5f",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Design Pattern",
+                        "id": "407f348e-6881-4934-94ba-5327eca134f5",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Id",
+                        "id": "a6c4dbee-abb2-44d0-9484-8d015628f4c9",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Service - Action Name",
+                        "id": "bcd159ef-e7ab-46b5-a023-3d590d2e0369",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Service Name",
+                        "id": "d0d05ddf-e9f4-4f5d-a5b9-60b2a757a83c",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Type ID",
+                        "id": "8f2e17ee-5d57-42ab-a51b-87fe853147a9",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Type Name",
+                        "id": "2358ef32-9a38-4ae6-908c-5069bb10b883",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    }
+                ],
+                "serviceElementDeveloperName": null,
+                "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                "updateByName": false,
+                "whoCreated": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoModified": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoOwner": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                }
+            },
+            {
+                "bindings": [
+                    {
+                        "databaseTableName": "Tenant",
+                        "developerName": "Tenant",
+                        "developerSummary": "The Tenant object structure",
+                        "id": "2e19834b-60e9-4417-8e3e-58037de069ab",
+                        "propertyBindings": [
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Id",
+                                "typeElementPropertyDeveloperName": "Id",
+                                "typeElementPropertyId": "e99aa459-0020-49c0-88c6-8863f169bdd1"
+                            },
+                            {
+                                "databaseContentType": null,
+                                "databaseFieldName": "Name",
+                                "typeElementPropertyDeveloperName": "Name",
+                                "typeElementPropertyId": "c0f38f13-e77f-468d-81cf-dfee821774f0"
+                            }
+                        ],
+                        "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                        "typeElementId": "db31370b-27d1-44d3-80cc-d85c7c9813d6"
+                    }
+                ],
+                "dateCreated": "2019-10-14T22:56:59.4554317+00:00",
+                "dateModified": "2019-10-14T22:56:59.4641575+00:00",
+                "developerName": "Tenant",
+                "developerSummary": "The Tenant object structure",
+                "elementType": "TYPE",
+                "id": "db31370b-27d1-44d3-80cc-d85c7c9813d6",
+                "properties": [
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Id",
+                        "id": "e99aa459-0020-49c0-88c6-8863f169bdd1",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    },
+                    {
+                        "contentFormat": null,
+                        "contentType": "ContentString",
+                        "developerName": "Name",
+                        "id": "c0f38f13-e77f-468d-81cf-dfee821774f0",
+                        "typeElementDeveloperName": null,
+                        "typeElementId": null
+                    }
+                ],
+                "serviceElementDeveloperName": null,
+                "serviceElementId": "7727118d-2456-4f83-b8ed-a1cba8c35897",
+                "updateByName": false,
+                "whoCreated": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoModified": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                },
+                "whoOwner": {
+                    "email": "dave.hock@dell.com",
+                    "firstName": "David",
+                    "id": "f590e3e4-d8a6-49f5-a325-7fbd83cd31bd",
+                    "lastName": "Hock"
+                }
+            }
+        ]
+    },
+    "providesAutoBinding": false,
+    "providesDatabase": false,
+    "providesFiles": false,
+    "providesIdentity": false,
+    "providesLocation": false,
+    "providesLogic": true,
+    "providesSocial": false,
+    "providesViews": false,
+    "sendDecryptedValues": false,
+    "updateByName": false,
+    "uri": "https://062b6f29.ngrok.io"
+}

@@ -14,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
+import com.boomi.services.flowutilityservice.getserviceitems.ServiceItem;
 import com.boomi.services.flowutilityservice.getservices.ServiceDefinition;
 import com.boomi.services.flowutilityservice.util.Tenant;
 import com.boomi.services.flowutilityservice.gettypefields.Field;
@@ -50,7 +51,8 @@ public class FlowAPIUtilTest {
     @Test
     public void testGetDesignPattern() throws Exception {
 		init();
-		List<ServiceDefinition> flowServices = Service.getFlowServices(services, types);
+		String serviceId="";
+		List<ServiceItem> flowServices = Service.getFlowServiceItems(serviceId, services, types);
 
 		for (int i=0; i<flowServices.size(); i++)
 		{
@@ -63,7 +65,8 @@ public class FlowAPIUtilTest {
     @Test
     public void testGetFlowServices() throws Exception {
     	init();
-		List<ServiceDefinition> flowServices = Service.getFlowServices(services, types);
+		String serviceId="";
+		List<ServiceItem> flowServices = Service.getFlowServiceItems(serviceId, services, types);
 
 		for (int i=0; i<flowServices.size(); i++)
 		{

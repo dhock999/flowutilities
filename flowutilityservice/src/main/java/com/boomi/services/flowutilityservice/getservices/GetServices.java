@@ -4,7 +4,7 @@ import java.util.List;
 import com.manywho.sdk.api.ContentType;
 import com.manywho.sdk.services.actions.Action;
 
-@Action.Metadata(name="Get Services and Actions", summary = "Return database and message services/actions  for tenant", uri="/flowutilities/services")
+@Action.Metadata(name="Get Services", summary = "Return services for the tenant", uri="/flowutilities/services")
 public class GetServices {
 	public static class Inputs{
 		@Action.Input(name="Token", contentType=ContentType.String)
@@ -31,7 +31,6 @@ public class GetServices {
 		}
 
 		public List<ServiceDefinition> getServices() throws IOException {
-			System.out.println("services" + services.size());
 			return services;
 		}
 	}

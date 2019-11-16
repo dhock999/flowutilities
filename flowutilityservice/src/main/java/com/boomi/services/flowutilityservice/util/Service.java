@@ -8,8 +8,10 @@ import java.util.UUID;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.boomi.services.flowutilityservice.getserviceitems.ServiceItem;
 import com.boomi.services.flowutilityservice.getservices.ServiceDefinition;
 import com.boomi.services.flowutilityservice.gettypefields.Field;
+import com.google.common.collect.Lists;
 
 public class Service {
 	
@@ -70,65 +72,71 @@ public class Service {
 	//*******************************************************************************
 	//Called by GetServiceCommand for UI
 	//*******************************************************************************
-	public static List<ServiceDefinition> getFlowServices (JSONArray services, JSONArray types)
+	public static List<ServiceItem> getFlowServiceItems (String serviceId, JSONArray services, JSONArray types)
 	{
-		List<ServiceDefinition> flowServices = new ArrayList<ServiceDefinition>();
-	    for (Object serviceObj:services)
-	    {
-	    	JSONObject service = (JSONObject)serviceObj;
-	    	JSONArray actions = null;
-	    	if (service.has("actions") && !service.isNull("actions"))
-	    		actions=service.getJSONArray("actions");
-	    	String serviceName = service.getString("developerName");
-	    	String serviceId = service.getString("id");
-	    	
-	    	if (actions !=null && actions.length()>0)
+		JSONObject service = Util.findObjectByID(services, serviceId);
+		List<ServiceItem> flowServices = Lists.newArrayList();
+    	String serviceType = null;
+    	JSONArray actions = null;
+    	if (service.has("actions") && !service.isNull("actions"))
+    		actions=service.getJSONArray("actions");
+    	String serviceName = service.getString("developerName");
+    	
+    	if (actions !=null && actions.length()>0)
+    	{
+    		serviceType = "Message";
+	    	for (Object actionObj:service.getJSONArray("actions"))
 	    	{
-		    	for (Object actionObj:service.getJSONArray("actions"))
-		    	{
-		    		
-		    		JSONObject action = (JSONObject)actionObj;
-		    		String actionName = action.getString("developerName");
-		    		String serviceActionName = serviceName + "(Message) - " + actionName;
-		    		ServicePattern designPattern = getServicePattern(service, actionName);
-			    	String description = getPatternDescription(designPattern);
-		    	
-			    	flowServices.add(new ServiceDefinition(serviceId
-			    			, serviceName
-			    			, UUID.randomUUID().toString()
-			    			, actionName, serviceActionName, designPattern.name(), "", "", description));
-		    	}
-	    	} 
-	    	if (service.getBoolean("providesDatabase")){
-	    		//Parse all types
-	    		for (Object typeObj:types)
-	    		{
-	    			JSONObject type = (JSONObject)typeObj;
-	    			if (!type.isNull("serviceElementId") && type.getString("serviceElementId").contentEquals(serviceId))
-	    			{
-			    		String typeName = type.getString("developerName");
-			    		String serviceTypeName = serviceName + "(Database) - " + typeName;
-			    		ServicePattern designPattern = getServicePattern(service, "");
-				    	String description = getPatternDescription(designPattern);
-				    	flowServices.add(new ServiceDefinition(serviceId
-				    			, service.getString("developerName")
-				    			, UUID.randomUUID().toString()
-				    			, "", serviceTypeName, designPattern.name(), typeName, type.getString("id"), description));
-	    			}
-	    		}
-	    	}
-	    	if (service.getBoolean("providesFiles")){
-	    		//Parse all types
-	    		String typeName = service.getString("developerName");
-	    		String serviceTypeName = serviceName + "(File Upload) - " + typeName;
-	    		ServicePattern designPattern = ServicePattern.FILES;
+	    		
+	    		JSONObject action = (JSONObject)actionObj;
+	    		String actionName = action.getString("developerName");
+	    		String serviceActionName = serviceName + "(Message) - " + actionName;
+	    		ServicePattern designPattern = getServicePattern(service, actionName);
 		    	String description = getPatternDescription(designPattern);
-		    	flowServices.add(new ServiceDefinition(serviceId
-		    			, service.getString("developerName")
+	    	
+		    	flowServices.add(new ServiceItem(serviceId
+		    			, serviceName
 		    			, UUID.randomUUID().toString()
-		    			, "", serviceTypeName, designPattern.name(), "", "", description));
+		    			, actionName
+		    			, serviceActionName
+		    			, serviceType
+		    			, designPattern.name()
+		    			, "", "", description));
 	    	}
-	    }		
+    	} 
+    	if (service.getBoolean("providesDatabase")){
+    		//Parse all types
+    		serviceType = "Database";
+    		for (Object typeObj:types)
+    		{
+    			JSONObject type = (JSONObject)typeObj;
+    			if (!type.isNull("serviceElementId") && type.getString("serviceElementId").contentEquals(serviceId))
+    			{
+		    		String typeName = type.getString("developerName");
+		    		String serviceTypeName = serviceName + "(Database) - " + typeName;
+		    		ServicePattern designPattern = getServicePattern(service, "");
+			    	String description = getPatternDescription(designPattern);
+			    	flowServices.add(new ServiceItem(serviceId
+			    			, service.getString("developerName")
+			    			, UUID.randomUUID().toString()
+			    			, "", serviceTypeName, serviceType, designPattern.name(), typeName, type.getString("id"), description));
+    			}
+    		}
+    	}
+    	if (service.getBoolean("providesFiles")){
+    		//Parse all types
+    		serviceType = "Files";
+
+    		String typeName = service.getString("developerName");
+    		String serviceTypeName = serviceName + "(File Upload) - " + typeName;
+    		ServicePattern designPattern = ServicePattern.FILES;
+	    	String description = getPatternDescription(designPattern);
+	    	flowServices.add(new ServiceItem(serviceId
+	    			, service.getString("developerName")
+	    			, UUID.randomUUID().toString()
+	    			, "", serviceTypeName, serviceType, designPattern.name(), "", "", description));
+    	}
+	
 	    return flowServices;
 	}
 	

@@ -79,38 +79,6 @@ public class FlowAPIUtilTest {
 //    	assertTrue(token.length()>0);
     }
     
-    @Test 
-    void deleteAllGenerated() throws IOException
-    {
-    	String token = FlowAPIClient.login("dave.hock@dell.com", "Gopack!23");
-		List<com.boomi.services.flowutilityservice.gettenants.Tenant> tenants=FlowAPIClient.getTenants(token);
-		String tenantId="72b3a5ea-5667-466e-820a-362dcc375834";
-//		tenantId = "c7a2e361-ad90-4079-8b1c-6c21a9f911a8";
-		deleteGeneratedTypes(token, tenantId, "page");
-		deleteGeneratedTypes(token, tenantId, "macro");
-		deleteGeneratedTypes(token, tenantId, "value");
-		deleteGeneratedTypes(token, tenantId, "type");
-    }
-    
-    static void deleteGeneratedTypes(String token, String tenantId, String type) throws JSONException, IOException
-    {
-    	String baseURI = "/api/draw/1/element/"+type;
-		JSONArray objects = new JSONArray(FlowAPIClient.doGet(baseURI, token, tenantId));
-		for (Object obj: objects)
-		{
-			JSONObject jObj = (JSONObject)obj;
-			if (!jObj.isNull("developerSummary") && jObj.getString("developerSummary").startsWith("GENERATED"))
-			{
-				try {
-					FlowAPIClient.doDelete(baseURI+"/"+jObj.getString("id"), token, tenantId);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					System.out.println(jObj.getString("developerName") + " " + e.getMessage());
-				}
-			}
-		}
-    }
-    
     
     
     @Test

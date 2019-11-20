@@ -37,7 +37,7 @@ public class FlowGenerateTest {
     @Test
 	public void testGenerateDesignPatter() throws Exception
 	{    	
-    	String token = FlowAPIClient.login("dave.hock@dell.com", "Gopack!23");
+    	String token = FlowAPIClient.login("dave.hock@dell.com", "");
 		List<Tenant> tenants=FlowAPIClient.getTenants(token);
 		String tenantId="72b3a5ea-5667-466e-820a-362dcc375834";
 		Tenant tenantObj=null;

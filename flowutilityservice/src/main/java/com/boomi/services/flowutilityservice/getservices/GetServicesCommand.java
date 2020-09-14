@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,6 +22,7 @@ import com.manywho.sdk.services.actions.ActionResponse;
 
 public class GetServicesCommand implements ActionCommand<ApplicationConfiguration, GetServices, Inputs, Outputs>{
 
+    private Logger logger = Logger.getLogger(this.getClass().getName());
 	@Override
 	public ActionResponse<Outputs> execute(ApplicationConfiguration configuration, ServiceRequest request,
 			Inputs input) {
@@ -30,10 +32,21 @@ public class GetServicesCommand implements ActionCommand<ApplicationConfiguratio
 			flowServices = Lists.newArrayList();
 		    for (Object service:array)
 		    {
+		    	String developerSummary="";
+		    	
+		    	if (((JSONObject)service).has("developerSummary"))
+		    	{
+		    		Object obj =((JSONObject)service).get("developerSummary");
+		    		if (obj !=null && obj instanceof String)
+		    			developerSummary = (String)obj;
+		    		else
+			    		logger.info("developerSummary:" + obj);		    			
+		    	}
+		    	
 		    	flowServices.add(new ServiceDefinition(((JSONObject)service).getString("id")
 		    			, ((JSONObject)service).getString("developerName")
 		    			, UUID.randomUUID().toString(),
-		    			((JSONObject)service).getString("developerSummary")));
+		    			developerSummary));
 		    	System.out.println(((JSONObject)service).getString("developerName"));
 		    }
 		} catch (IOException e) {
